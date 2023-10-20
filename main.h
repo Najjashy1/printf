@@ -6,7 +6,17 @@
 #include <stdarg.h>
 #include <unistd.h>
 #include <limits.h>
-
+/**
+ * struct format - formates things
+ * @dd: pointer
+ * @p: pointer
+ */
+typedef struct format
+{
+	char *dd;
+	int (*p)();
+} moch;
+int print_binary(va_list bin);
 int _printf(const char *format, ...);
 int _putchar(char c);
 int print_character(va_list charcater);
