@@ -16,4 +16,5 @@ int _lench(const char *s);
 int print_p(void);
 int print_in(va_list ing);
 int print_dc(va_list ing);
+int _printf(const char *format, ...);
 #endif

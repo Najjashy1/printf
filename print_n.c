@@ -7,7 +7,9 @@
 int print_in(va_list ing)
 {
 	int j = va_arg(ing, int), k = 1;
-	int count, ls = j % 10, integer, xp = 1;
+	int count;
+	int ls = j % 10;
+	int integer, xp = 1;
 
 	j = j / 10;
 	count = j;
@@ -35,7 +37,7 @@ int print_in(va_list ing)
 			k++;
 		}
 	}
-	_Putchar(ls + '0');
+	_putchar(ls + '0');
 	return (k);
 }
 
@@ -48,7 +50,9 @@ int print_in(va_list ing)
 int print_dc(va_list ing)
 {
 	int j = va_arg(ing, int), k = 1;
-	int count, ls = j % 10, integer, xp, xp = 1;
+	int count;
+	int ls = j % 10, integer;
+	int xp = 1;
 
 	j = j / 10;
 	count = j;
